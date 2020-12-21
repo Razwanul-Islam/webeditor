@@ -1,0 +1,8 @@
+body{background: #002240;}
+.titler{background: #002240;border-bottom:1px solid #f9f9f9;}
+h1{color:rgb(219, 233, 228)}
+.editor{min-height:80vh;;height:100%;width:100%;}
+.editor-ide{min-height:80vh;height:100%}
+.bg-ts{background:rgb(245, 245, 245);width:98%;height:100%;margin-top:10px;overflow: auto;}
+.bg-white{background:rgb(255, 255, 255);position:relative;width:98%;height:100%;margin-top:10px;overflow: auto;}
+/*textarea {background:#34495E; color:#fff; padding:5px;}*/

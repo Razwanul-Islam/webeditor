@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>RIR Editor</title>
+
+
+        <!-- <link rel=stylesheet href="./doc/docs.css"> -->
+        <link rel="stylesheet" href="./lib/codemirror.css">
+        <link rel="stylesheet" href="./theme/cobalt.css">
+        <link rel="stylesheet" href="./addon/hint/show-hint.css">
+        <script src="./lib/codemirror.js"></script>
+        <script src="./addon/hint/show-hint.js"></script>
+  <script src="./addon/hint/xml-hint.js"></script>
+  <script src="./addon/hint/html-hint.js"></script>
+        <script src="./addon/selection/selection-pointer.js"></script>
+        <script src="./mode/xml/xml.js"></script>
+        <script src="./mode/javascript/javascript.js"></script>
+        <script src="./mode/css/css.js"></script>
+        <script src="./mode/vbscript/vbscript.js"></script>
+        <script src="./addon/selection/active-line.js"></script>
+        <script src="htmlmixed.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="web editor.css">
+        <script>
+          function println(text){
+                document.write(text);
+            }
+        </script>
+    </head>
+
+    <body onload="edited()">
+
+        <!-------HEADER-------->
+
+        <div class="container-fluid titler">
+            <h1 class="text-center">RIR Web Editor(HTML & CSS)</h1>
+        </div>
+
+        <!-------EDITOR&OUTPUT-------->
+
+
+        <div class="row editor-ide">
+            <div class="input-display col-xs-12 col-sm-12 col-md-6 col-lg-6" >
+            <textarea  class="bg-ts " id='editor'>
+    <style>
+        .d-flex{display:flex}
+        .a-center{align-items:center}
+        .fd-col{flex-direction: column }    
+        .jc-center{justify-content:center}
+        .jc-sb{justify-content:space-between}
+        .jc-sa{justify-content:space-around}
+        
+        .p-img{width:15em;height:auto}
+    </style>
+    <div >
+        <div class='d-flex jc-sa' style="padding:15px">
+            <img src='https://m.media-amazon.com/images/S/aplus-media/vc/10e4692b-15e9-47c0-b918-5716cf5186cd.__CR0,0,1000,1000_PT0_SX300_V1___.jpg' alt='No Image' class='p-img'/>
+
+            <div class='d-flex fd-col'>
+                <h3>Product Name</h3>
+                <span><b>Brand : </b> My Company</span>
+                <span><b>Price : </b> 1.34 $</span>
+                <span><b>In Stock: </b> Available</span>
+                <span><b>Size: </b> L, M , XL</span>
+            </div>
+        
+        </div>
+    
+    </div>
+</textarea>
+            </div>
+
+            <div class="input-display col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div  class="bg-white"  id='output'>
+                   
+                </div>
+            </div>
+
+
+        </div>
+<script src='./lib/main.js'>    
+</script>
+    </body>
+
+
+</html>
+
